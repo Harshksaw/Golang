@@ -2,17 +2,6 @@ package main
 
 import "fmt"
 
-func main() {
-    for i := 0; i < 5; i++ {
-        fmt.Println(i)
-    }
-
-    for i, char := range "Harsh" {
-        fmt.Println(i, string(char))
-    }
-      testInsertionSort()
-      maps()
-}
 
 
 func arrays(){
@@ -87,4 +76,28 @@ func odd_even(num int) (string,int){
     }
     return "odd", num % 2
     
+}
+
+func demo_pointer() {
+    i:= 220
+
+    var ptr *int = &i // Pointer to i
+
+    fmt.Println("Address of i:", &i)
+    fmt.Println("Value at ptr:", *ptr) // Dereferencing the pointer
+}
+
+
+func main() {
+    for i := 0; i < 5; i++ {
+        fmt.Println(i)
+    }
+
+    for i, char := range "Harsh" {
+        fmt.Println(i, string(char))
+    }
+      testInsertionSort()
+      maps()
+      demo_pointer()
+
 }
