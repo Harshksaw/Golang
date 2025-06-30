@@ -11,6 +11,7 @@ func main() {
         fmt.Println(i, string(char))
     }
       testInsertionSort()
+      maps()
 }
 
 
@@ -58,4 +59,32 @@ func insertionSort(arr []int){
 
     }
 
+}
+
+func maps(){
+    porduct  := map[string]int{
+        "apple": 10,
+        "banana": 20,
+        "orange": 30,
+
+    }
+    fmt.Println(porduct)
+
+    emptyMap := make(map[string]int)
+
+    emptyMap["kiwi"] = 40
+    emptyMap["mango"] = 50
+    fmt.Println(emptyMap)
+}
+
+func odd_even(num int) (string,int){
+
+    if(num < 0) {
+        return "evem",0 // Invalid input
+    }
+    if num == 0 {
+        return "odd", 1// Zero is considered even
+    }
+    return "odd", num % 2
+    
 }
